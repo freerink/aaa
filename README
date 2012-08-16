@@ -1,3 +1,3 @@
-Small main class with a big name (AutonomousAutomaticAnnouncer) which uses twiiter4j-core.jar to broadcast the build status of a build server via Twitter.
+Small main class with a big name (AutonomousAutomaticAnnouncer) which uses twitter4j-core.jar to broadcast the build status of a build server via Twitter.
 I use it to announce the CruiseControl build status and the JUnit test results to my team. I configured CruiseControl to use an antpublisher to call either the buildok or buildfailed target in the projects build file.
 These targets construct the message to announce using the project name, build label and the test results. The targets then use the exec task to run the AAA main.
